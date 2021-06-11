@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 56cfb9b6c41f07f4a928fce3f592aaa5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b6382c40c629eef48b13685e184932d7, type: 3}
+  importOptions:
+    scale: 1
+    splitLayers: 0
+    splitSlices: 0
+    fileNameFormat: '{title}_{tag}_frame{tagframe1}'
+    ditheringAlgorithmType: 0
+    ditheringMatrixType: 0
+    colorMode: 0
+  spriteImportOptions:
+    pixelsPerUnit: 20
+    pivot: {x: 0.5, y: 0.5}
+    extrude: 0
+    meshType: 1
+    border: {x: 0, y: 0, z: 0, w: 0}
+  textureCreationOptions:
+    textureWrapMode: 1
+    filterMode: 0
+    alphaIsTransparency: 1
+  colabOptions:
+    exportToFile: 0
+    exportDirectory: Sprites/{filename}
+  animationOptions:
+  - tagName: Walk
+    animationOptions:
+      relativePath: 
+      componentType: 0
+      overrideDirection: 0
+      direction: 0
+      loopTime: 0
+      useCustomCurve: 0
+      customCurve:
+        serializedVersion: 2
+        curve: []
+        preInfinity: 2
+        postInfinity: 2
+        rotationOrder: 4
+  - tagName: Idle
+    animationOptions:
+      relativePath: 
+      componentType: 0
+      overrideDirection: 0
+      direction: 0
+      loopTime: 0
+      useCustomCurve: 0
+      customCurve:
+        serializedVersion: 2
+        curve: []
+        preInfinity: 2
+        postInfinity: 2
+        rotationOrder: 4
+  - tagName: Jump
+    animationOptions:
+      relativePath: 
+      componentType: 0
+      overrideDirection: 0
+      direction: 0
+      loopTime: 0
+      useCustomCurve: 0
+      customCurve:
+        serializedVersion: 2
+        curve: []
+        preInfinity: 2
+        postInfinity: 2
+        rotationOrder: 4
+  - tagName: Attack
+    animationOptions:
+      relativePath: 
+      componentType: 0
+      overrideDirection: 0
+      direction: 0
+      loopTime: 0
+      useCustomCurve: 0
+      customCurve:
+        serializedVersion: 2
+        curve: []
+        preInfinity: 2
+        postInfinity: 2
+        rotationOrder: 4
+  sheetData:
+    frames:
+    - filename: Placeholder_Walk_frame1
+      frame:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Walk_frame2
+      frame:
+        x: 24
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Walk_frame3
+      frame:
+        x: 48
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Walk_frame4
+      frame:
+        x: 72
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Idle_frame1
+      frame:
+        x: 96
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Idle_frame2
+      frame:
+        x: 120
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Jump_frame1
+      frame:
+        x: 144
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Jump_frame2
+      frame:
+        x: 168
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Jump_frame3
+      frame:
+        x: 192
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Attack_frame1
+      frame:
+        x: 216
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Attack_frame2
+      frame:
+        x: 240
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    - filename: Placeholder_Attack_frame3
+      frame:
+        x: 264
+        y: 0
+        w: 24
+        h: 24
+      rotated: 0
+      trimmed: 0
+      spriteSourceSize:
+        x: 0
+        y: 0
+        w: 24
+        h: 24
+      sourceSize:
+        w: 24
+        h: 24
+      duration: 100
+    meta:
+      version: 1.2.27-dev
+      image: Placeholder_sheet.png
+      format: RGBA8888
+      size:
+        w: 288
+        h: 24
+      scale: 1
+      frameTags:
+      - name: Walk
+        from: 0
+        to: 3
+        direction: forward
+      - name: Idle
+        from: 4
+        to: 5
+        direction: forward
+      - name: Jump
+        from: 6
+        to: 8
+        direction: forward
+      - name: Attack
+        from: 9
+        to: 11
+        direction: forward
+      slices: []
+    pathToSheetData: Temp/UnityTempFile-bf57afb32314c8848b9b464046228fab/asetempexports/Placeholder_data.json
+    aseFileName: Assets/Sprites/Character/Placeholder.aseprite
