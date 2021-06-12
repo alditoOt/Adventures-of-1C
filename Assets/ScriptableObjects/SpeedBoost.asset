@@ -15,7 +15,7 @@ MonoBehaviour:
   Type: 0
   Name: High Jump
   Description: Jump higher
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 2418341e1b409cc419a0458924e7322d, type: 3}
   Duration: 5
   speed: 10
   jump: -1
