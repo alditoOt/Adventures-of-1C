@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 3813102013075173656}
   - component: {fileID: 2234469931389425559}
   m_Layer: 5
-  m_Name: PlayerItemUI
+  m_Name: PlayerItemUI L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   frontImage: {fileID: 3030273352289449916}
   backImage: {fileID: 7293583912241491559}
-  playerColor: {r: 0.10453009, g: 0.58096045, b: 0.8207547, a: 1}
+  playerColor: {r: 0.9372549, g: 0.53333336, b: 0.32941177, a: 1}
   border: {fileID: 3566900910909115236}
   backGround: {fileID: 2343765291021039190}
 --- !u!1 &7151270199851925881

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 739647857}
   - component: {fileID: 739647858}
   m_Layer: 9
-  m_Name: PlayerCamera
+  m_Name: PlayerCamera L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d7cf28373abde459cbd7bab7fcf7e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isLeft: 0
+  isLeft: 1
 --- !u!1 &4980962454739350821
 GameObject:
   m_ObjectHideFlags: 0

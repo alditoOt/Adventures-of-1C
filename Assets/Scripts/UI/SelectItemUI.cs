@@ -156,7 +156,7 @@ public class SelectItemUI : MonoBehaviour
         completeParent.SetActive(false);
         ShowSelected();
         Color.RGBToHSV(leftColor, out var h, out var s, out var v);
-        _image.DOColor(Color.HSVToRGB(h, s - 0.7f, v), 0.5f);
+        _image.DOColor(Color.HSVToRGB(h, s * 0.5f, v), 0.5f);
         title.text = $"SELECT YOUR <color=#{ColorUtility.ToHtmlStringRGB(leftColor)}>LEFT</color> ITEM";
         backButton.interactable = false;
         backButton.gameObject.SetActive(false);
@@ -172,7 +172,7 @@ public class SelectItemUI : MonoBehaviour
         confirmButton.interactable = false;
         Color.RGBToHSV(rightColor, out var h, out var s, out var v);
 
-        _image.DOColor(Color.HSVToRGB(h, s - 0.7f, v), 0.5f);
+        _image.DOColor(Color.HSVToRGB(h, s * 0.5f, v), 0.5f);
         title.text = $"SELECT YOUR <color=#{ColorUtility.ToHtmlStringRGB(rightColor)}>RIGHT</color> ITEM";
     }
 

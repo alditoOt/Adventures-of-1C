@@ -11,8 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: item
       value: 
-      objectReference: {fileID: 11400000, guid: d8a459801456a3544ac8126fb627ebfe,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 1333367070654448174, guid: db423b7c4e3008b4abeefd4ebe6e0bb9,
         type: 3}
       propertyPath: IsLeft
@@ -41,12 +40,12 @@ PrefabInstance:
     - target: {fileID: 9014153860297076892, guid: db423b7c4e3008b4abeefd4ebe6e0bb9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.74
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 9014153860297076892, guid: db423b7c4e3008b4abeefd4ebe6e0bb9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.64
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9014153860297076892, guid: db423b7c4e3008b4abeefd4ebe6e0bb9,
         type: 3}
