@@ -24,7 +24,7 @@ public class PlayerItem : MonoBehaviour
 
     private Item InitializeItem(ItemData data)
     {
-        if (data == null)
+        if (data == null || itemUI == null)
         {
             return null;
         }

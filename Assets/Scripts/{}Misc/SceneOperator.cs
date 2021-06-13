@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 public class SceneOperator : MonoBehaviourSingleton<SceneOperator>
 {
     public Animator animator;
+
     public void LoadNextScene()
     {
 #if UNITY_EDITOR
         if (SceneManager.GetActiveScene().buildIndex >= SceneManager.sceneCountInBuildSettings)
+        {
             Debug.LogError("Trying to load next scene from scene with maximal build index.");
+            LoadScene(0);
+        }
 #endif
 
         LoadScene(sceneBuildIndex: SceneManager.GetActiveScene().buildIndex + 1);
@@ -25,7 +29,6 @@ public class SceneOperator : MonoBehaviourSingleton<SceneOperator>
 
         LoadScene(sceneBuildIndex: SceneManager.GetActiveScene().buildIndex - 1);
     }
-
 
     public void ResetScene()
     {

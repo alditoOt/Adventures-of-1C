@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Name: Freeze Movement
-  Description: Freezes the character in place
+  Description: Freezes the character in place for 5 seconds
   Icon: {fileID: -8894057469729715593, guid: 475b3db31471afd419356c66de9a1e8c, type: 3}
   Duration: 5
   speed: 0

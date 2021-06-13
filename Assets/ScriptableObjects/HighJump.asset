@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Name: High Jump
-  Description: Increases the height the character can jump
+  Description: Increases the height the character can jump for 5 seconds
   Icon: {fileID: 3147117153359372007, guid: 475b3db31471afd419356c66de9a1e8c, type: 3}
   Duration: 5
   speed: -1

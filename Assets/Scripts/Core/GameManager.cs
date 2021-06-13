@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -53,6 +54,11 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         {
             _rightComleted = false;
         }
+    }
+
+    public void StartGame()
+    {
+        SceneOperator.Instance.LoadNextScene();
     }
 
     public void ResetLevel()
