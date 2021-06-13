@@ -27,12 +27,14 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     #endregion
 
+    public bool frozen = false;
+    public float frozenX, frozenY;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         DoMove();
         CheckGround();
         BetterJump();
+        FreezePlayer();
     }
 
     #region walking
@@ -52,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     public void DoMove()
     {
         rb.velocity = new Vector2(move.x * speed, rb.velocity.y);
-        //anim.SetFloat("horizontalSpeed", Mathf.Abs(rb.velocity.x));
+        anim.SetFloat("horizontalSpeed", Mathf.Abs(rb.velocity.x));
         if(rb.velocity.x < 0)
         {
             transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -74,7 +77,7 @@ public class PlayerMovement : MonoBehaviour
     void CheckGround()
     {
         isOnGround = Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - height), radius, groundLayer);
-        //anim.SetBool("isOnGround", isOnGround);
+        anim.SetBool("isOnGround", isOnGround);
     }
 
     void OnJump(InputValue value)
@@ -83,7 +86,8 @@ public class PlayerMovement : MonoBehaviour
         if(jumping && isOnGround)
         {
             rb.velocity = new Vector2(rb.velocity.x, jump);
-           // anim.SetTrigger("jumping");
+            anim.ResetTrigger("jumping");
+            anim.SetTrigger("jumping");
         }
     }
 
@@ -98,7 +102,27 @@ public class PlayerMovement : MonoBehaviour
 
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
-       // anim.SetFloat("verticalSpeed", rb.velocity.y);
+       anim.SetFloat("verticalSpeed", rb.velocity.y);
     }
     #endregion
+
+    void FreezePlayer()
+    {
+        if(fallMultiplier == 0)
+        {
+            if(!frozen)
+            {
+                frozenX = transform.position.x;
+                frozenY = transform.position.y;
+            }
+            frozen = true;
+            transform.position = new Vector3(frozenX, frozenY, transform.position.z);
+            anim.SetBool("freeze", true);
+        }
+        else
+        {
+            anim.SetBool("freeze", false);
+            frozen = false;
+        }
+    }
 }

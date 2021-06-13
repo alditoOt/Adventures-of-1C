@@ -131,10 +131,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0, y: 13}
-      - {x: 25, y: 13}
+    - - {x: 1, y: 13.5}
+      - {x: 25, y: 13.5}
       - {x: 25, y: 0}
-      - {x: 0, y: 0}
+      - {x: 1, y: 0}
 --- !u!114 &4636160491006009390
 MonoBehaviour:
   m_ObjectHideFlags: 0
