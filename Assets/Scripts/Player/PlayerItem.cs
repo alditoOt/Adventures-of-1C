@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class PlayerItem : MonoBehaviour
 {
     public ItemData item;
-    public ItemUI itemUI;
+    public PlayerItemUI itemUI;
     private Item _item;
     private PlayerIdentifier _id;
     private bool isAvailable = false;
@@ -16,7 +16,10 @@ public class PlayerItem : MonoBehaviour
     private void Start()
     {
         _id = GetComponent<PlayerIdentifier>();
-        _item = InitializeItem(item);
+        GameManager.Instance.LevelStarted.AddListener((left, right) =>
+        {
+            _item = InitializeItem(_id.IsLeft ? left : right);
+        });
     }
 
     private Item InitializeItem(ItemData data)
@@ -26,6 +29,7 @@ public class PlayerItem : MonoBehaviour
             return null;
         }
         isAvailable = true;
+        itemUI.gameObject.SetActive(true);
         itemUI.SetImage(data.Icon);
         switch (data.Type)
         {

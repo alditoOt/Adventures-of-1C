@@ -7,7 +7,10 @@ public class ItemData : ScriptableObject
 {
     public ItemType Type;
     public string Name;
+
+    [TextArea]
     public string Description;
+
     public Sprite Icon;
     public float Duration;
 

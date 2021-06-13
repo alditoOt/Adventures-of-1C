@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class GameManager : MonoBehaviourSingleton<GameManager>
 {
     public UnityEvent LevelCompleted;
+    public UnityEvent<ItemData, ItemData> LevelStarted;
 
     private bool _leftComleted = false;
     private bool _rightComleted = false;
@@ -14,6 +15,13 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         if (LevelCompleted == null)
             LevelCompleted = new UnityEvent();
+        if (LevelStarted == null)
+            LevelStarted = new UnityEvent<ItemData, ItemData>();
+    }
+
+    public void StartLevel(ItemData left, ItemData right)
+    {
+        LevelStarted.Invoke(left, right);
     }
 
     public void CompletedDoor(bool left)
