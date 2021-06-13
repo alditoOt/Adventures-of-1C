@@ -159,6 +159,17 @@
                 },
                 {
                     "name": "",
+                    "id": "348c448d-4184-4357-b14f-b7279dc8031d",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3c76eb9f-d9df-438e-9e7f-668d4072a2cc",
                     "path": "<Keyboard>/i",
                     "interactions": "",

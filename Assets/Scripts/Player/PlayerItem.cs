@@ -65,6 +65,8 @@ public class PlayerItem : MonoBehaviour
             if (_item != null)
             {
                 var other = FindObjectsOfType<PlayerIdentifier>().First(p => p.IsLeft != _id.IsLeft).gameObject;
+
+                AudioManager.Instance.Play("UseItem");
                 _item.Use(gameObject, other);
                 isAvailable = false;
                 StartCoroutine(RestoreCoroutine());
@@ -78,6 +80,7 @@ public class PlayerItem : MonoBehaviour
         yield return new WaitForSeconds(_item.data.Duration);
         var other = FindObjectsOfType<PlayerIdentifier>().First(p => p.IsLeft != _id.IsLeft).gameObject;
         Debug.Log($"Restoring item in { (_id.IsLeft ? "left" : "right") } character");
+        AudioManager.Instance.Play("RestoreItem");
         _item.Restore(gameObject, other);
         wasUsed = true;
     }

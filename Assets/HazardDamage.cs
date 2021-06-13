@@ -9,6 +9,7 @@ public class HazardDamage : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log("ripardo, reiniciar escena");
+            AudioManager.Instance.Play("Death");
             GameManager.Instance.ResetLevel();
         }
     }

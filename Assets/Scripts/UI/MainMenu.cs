@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private void Start()
+    {
+        AudioManager.Instance.ChangeBackgroundMusic("Menu");
+    }
+
     public void StartGame()
     {
+        AudioManager.Instance.Play("UseItem");
+        AudioManager.Instance.ChangeBackgroundMusic("Game");
         GameManager.Instance.StartGame();
     }
 

@@ -42,6 +42,8 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
             Debug.Log("Finished");
             SceneOperator.Instance.LoadNextScene();
         }
+
+        AudioManager.Instance.Play("Finish");
     }
 
     public void ExitedDoor(bool left)

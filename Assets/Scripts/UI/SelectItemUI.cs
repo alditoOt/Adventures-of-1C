@@ -97,6 +97,7 @@ public class SelectItemUI : MonoBehaviour
 
     public void Confirm()
     {
+        AudioManager.Instance.Play("UseItem");
         if (!_selectedForL.HasValue)
         {
             _selectedForL = _currentlySelectedIndex;
@@ -124,6 +125,7 @@ public class SelectItemUI : MonoBehaviour
 
     public void Back()
     {
+        AudioManager.Instance.Play("RestoreItem");
         if (_selectedForL.HasValue & !_selectedForR.HasValue)
         {
             _currentlySelectedIndex = _selectedForL;
