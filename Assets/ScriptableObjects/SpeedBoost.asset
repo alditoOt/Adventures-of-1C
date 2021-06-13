@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SpeedBoost
   m_EditorClassIdentifier: 
   Type: 0
-  Name: Speed Bost
-  Description: Speedy speedy <color="green">Color test
+  Name: Speed Boost
+  Description: Doubles the character's movement speed <color="green">Color test
   Icon: {fileID: 720586757817451359, guid: 475b3db31471afd419356c66de9a1e8c, type: 3}
   Duration: 5
   speed: 10
