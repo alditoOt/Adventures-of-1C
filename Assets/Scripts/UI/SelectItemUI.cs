@@ -107,10 +107,7 @@ public class SelectItemUI : MonoBehaviour
         else if (!_selectedForR.HasValue)
         {
             _selectedForR = _currentlySelectedIndex.Value;
-            ChangeToLast();
-        }
-        else
-        {
+
             GameManager.Instance.StartLevel(items[_selectedForL.Value], items[_selectedForR.Value]);
             var anim = canvasParent.GetComponent<Animator>();
             anim.ResetTrigger("End");
