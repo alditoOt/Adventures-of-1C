@@ -40,6 +40,8 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
         {
             LevelCompleted.Invoke();
             Debug.Log("Finished");
+            _leftComleted = false;
+            _rightComleted = false;
             SceneOperator.Instance.LoadNextScene();
         }
 
@@ -66,5 +68,7 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     public void ResetLevel()
     {
         SceneOperator.Instance.ResetScene();
+        _leftComleted = false;
+        _rightComleted = false;
     }
 }
