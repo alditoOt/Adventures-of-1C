@@ -22,6 +22,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterR
       objectReference: {fileID: 0}
+    - target: {fileID: 9014153860297076890, guid: db423b7c4e3008b4abeefd4ebe6e0bb9,
+        type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: a325edc75d67609449d76b21d8a72577,
+        type: 3}
     - target: {fileID: 9014153860297076891, guid: db423b7c4e3008b4abeefd4ebe6e0bb9,
         type: 3}
       propertyPath: m_Color.r
