@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6714010696116863313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6714010696116863315}
+  - component: {fileID: 6714010696116863312}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6714010696116863315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714010696116863313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.2739835, y: -0.3924855, z: -1.792872}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6714010696116863312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6714010696116863313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1790d45e052618f429174132db9db973, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Door
+    clip: {fileID: 8300000, guid: e9a7621a4a8075b4bb7b373e0ca1fe3c, type: 3}
+    volume: 0.5
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: 83d9716d1b7d0e544aabee2be39d72eb, type: 3}
+    volume: 0.5
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Finish
+    clip: {fileID: 8300000, guid: bba2dda9574a5b54687d5478834d0851, type: 3}
+    volume: 0.5
+    pitch: 0
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: UseItem
+    clip: {fileID: 8300000, guid: f19d33e0e69b96746a87e38f39be1c31, type: 3}
+    volume: 0.5
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: RestoreItem
+    clip: {fileID: 8300000, guid: 8abf7243472421f4394b464ebec35743, type: 3}
+    volume: 0.5
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 2f9d74ff0e97640448342e3f1720d0d2, type: 3}
+    volume: 0.5
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Menu
+    clip: {fileID: 8300000, guid: e5d0f375327cebd449640ba394912752, type: 3}
+    volume: 0.05
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 1
+    source: {fileID: 0}
+  - name: Game
+    clip: {fileID: 8300000, guid: 8ee54a48a48c1814596c9c3fb2edadf7, type: 3}
+    volume: 0.05
+    pitch: 1
+    pitchMinRange: 0
+    pitchMaxRange: 0
+    loop: 1
+    source: {fileID: 0}
+  lowVolume: 0.1
